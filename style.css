@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+footer{
+    bottom:  0px;
+    position: fixed;
+    height: 5vh;
+    width: 100vw;
+}
+
+.box{
+    display: block;
+    width: 90%;
+    background-color: rgb(75, 86, 88);
+    box-shadow: 20px 20px black;
+    text-align: start;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.box2{
+    text-align: right;
+}
+section.resume-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+@media (min-width: 992px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+    body {
+      padding-top: 0;
+      padding-left: 17rem;
+      
+    }
+    .info{
+        width: 85%;
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+    }
+    .box{
+        width: 100%;
+    }
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 12rem;
+        border: 0.2rem solid rgba(255, 255, 255, 0.2);
+    }
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+@media (min-width: 200px) and (max-width:991px){
+    section.resume-section {
+        min-height: 30vh;
+    }
+    .info{
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5vh!important;
+        margin-bottom: auto;
+    }
+    .box{
+        width: 100%;
+        text-align: center;
+    }
+    .box2{
+        text-align: center;
+    }
+}
