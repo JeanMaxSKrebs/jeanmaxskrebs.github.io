@@ -56,7 +56,9 @@
         <div class="box">
           <h1><strong>JEAN MAX S KREBS</strong></h1>
           <br>
-          <h4><div id="idade"></div></h4>
+          <h4>
+            <div id="idade"></div>
+          </h4>
         </div>
         <br><br>
         <div class="box2">
@@ -260,10 +262,22 @@
   </section>
 
   <footer>
+    <script>function idade() {
+        dia = 01;
+        mes = 03;
+        ano = 2001;
+        let idade;
+        idade = new Date().getFullYear() - ano;
+        HTMLNovo = document.createTextNode(idade + " anos | Estudante TSI - Ifsul Pelotas");
+
+        let a = document.getElementById("idade");
+        a.appendChild(HTMLNovo);
+      }</script>
     <script src="index.js"></script>
 
     <a href="https://github.com/JeanMaxSKrebs"><i style="font-size: 2em;" class="fab fa-github redesocial1"></i></a>
-    <a href="https://www.facebook.com/jean.max.7777/"><i style="font-size: 2em;" class="fab fa-facebook redesocial2"></i></a>
+    <a href="https://www.facebook.com/jean.max.7777/"><i style="font-size: 2em;"
+        class="fab fa-facebook redesocial2"></i></a>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
