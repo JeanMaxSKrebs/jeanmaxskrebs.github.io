@@ -4,7 +4,7 @@ function idade() {
     ano = 2001;
     let idade;
     idade = new Date().getFullYear() - ano;
-    HTMLNovo = document.createTextNode(idade+" anos | Estudante TSI - Ifsul Pelotas");
+    HTMLNovo = document.createTextNode(idade+" anos | Estudante");
 
     let a = document.getElementById("idade");
     a.appendChild(HTMLNovo);
